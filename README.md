@@ -18,7 +18,9 @@ This project includes the following functionalities:
 
 LIME approximates the model's prediction with a local surrogate model that is interpretable. The key idea is to perturb the input data and see how the predictions change. This process is mathematically described as:
 
-\[ \hat{f}(x) = \text{argmin}_{g \in G} \sum_{z \in Z} \pi_x(z) (f(z) - g(z))^2 + \Omega(g) \]
+$$
+\hat{f}(x) = \arg \min_{g \in G} \sum_{z \in Z} \pi_x(z) \left( f(z) - g(z) \right)^2 + \Omega(g)
+$$
 
 where:
 - \( \hat{f}(x) \) is the surrogate model.
