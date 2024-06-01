@@ -24,10 +24,10 @@ $$
 
 where:
 - $$\( \hat{f}(x) \)$$ is the surrogate model.
-- \( G \) is the set of interpretable models.
-- \( \pi_x(z) \) is the proximity measure between the instance \( x \) and \( z \).
-- \( f(z) \) is the prediction of the original model.
-- \( \Omega(g) \) is the complexity measure of the surrogate model \( g \).
+- $$\( G \)$$ is the set of interpretable models.
+- $$\( \pi_x(z) \)$$ is the proximity measure between the instance \( x \) and \( z \).
+- $$\( f(z) \)$$ is the prediction of the original model.
+- $$\( \Omega(g) \)$$ is the complexity measure of the surrogate model \( g \).
 ### SHAP
 
 SHAP values are based on the concept of Shapley values from cooperative game theory. The Shapley value for a feature \( i \) is given by:
