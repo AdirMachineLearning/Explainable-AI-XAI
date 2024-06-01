@@ -23,6 +23,14 @@ $$
 $$
 
 where:
+- \( \hat{f}(x) \) is the surrogate model.
+- \( G \) is the set of interpretable models.
+- \( \pi_x(z) \) is the proximity measure between the instance \( x \) and \( z \).
+- \( f(z) \) is the prediction of the original model.
+- \( \Omega(g) \) is the complexity measure of the surrogate model \( g \).
+
+
+where:
 - $$\( \hat{f}(x) \)$$ is the surrogate model.
 - $$\( G \)$$ is the set of interpretable models.
 - $$\( \pi_x(z) \)$$ is the proximity measure between the instance \( x \) and \( z \).
