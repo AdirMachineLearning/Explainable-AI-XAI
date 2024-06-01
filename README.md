@@ -38,10 +38,10 @@ $$
 $$
 
 where:
-- \( \phi_i \) is the Shapley value for feature \( i \).
-- \( N \) is the set of all features.
-- \( S \) is a subset of features not containing \( i \).
-- \( f(S) \) is the model prediction using features in subset \( S \).
+- $$\( \phi_i \)$$ is the Shapley value for feature \( i \).
+- $$\( N \)$$ is the set of all features.
+- $$\( S \)$$ is a subset of features not containing \( i \).
+- $$\( f(S) \)$$ is the model prediction using features in subset \( S \).
 
 ## Code
 
@@ -177,3 +177,13 @@ visualize_lime_explanation(lime_explanation)
 # Get SHAP explanation
 expected_value, shap_values, instance = explain_instance_with_shap(model, instance_index, X)
 visualize_shap_explanation(expected_value, shap_values, instance, X.columns.tolist(), plot_type=shap_plot_type)
+```
+
+# Installation 
+pip install numpy pandas scikit-learn lime shap matplotlib
+
+# Usage
+1. Load your data (I used Iris dataset for the example)
+2. Train your model on the dataset - make sure it is a model that can be fit on SHAP and LIME
+3. Use the functions `explain_instance_with_lime` and `explain_instance_with_shap` to get explanations for a single data point.
+4. Visualize the explanations using `visualize_lime_explanation` and `visualize_shap_explanation`.
